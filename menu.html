@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>Навігаційне меню Web-проекту</title>
+    <link id="menu-css-link" sizes="any" charset="UTF-8" class="theme-stylesheet" rel="stylesheet" href="styles.css" type="text/style">
+</head>
+<body>
+
+    <!-- Тег <nav> з атрибутом class -->
+    <nav class="main-nav">
+        <h2>Карта навігації Web-проекту</h2>
+    </nav>
+
+    <main id="menu-main">
+        <h1>Карта розділів фірми "TechLogistic Solutions"</h1>
+        
+        <p>Скористайтеся гіперпосиланнями для переходу до відповідних розділів проекту:</p>
+
+        <!-- Маркований список меню -->
+        <ul class="custom-list" value="disc" compact style="line-height: 2;" title="Навігаційні посилання">
+            <li id="menu-nav-1" type="disc" title="Головна сторінка списків" lang="uk">
+                <!-- Зовнішнє/відносне посилання на головну сторінку списків -->
+                <a href="index.html" accesskey="m" target="_self" rel="index" type="text/html" tabindex="1">
+                    Головна сторінка списків та послуг (index.html)
+                </a>
+            </li>
+            <li id="menu-nav-2" type="disc" title="Внутрішній анкер - Про компанію" lang="uk">
+                <!-- Внутрішнє посилання на анкер іншої сторінки -->
+                <a href="index.html#about-section" accesskey="a" target="_self" rel="bookmark" type="text/html" tabindex="2">
+                    Перейти до розділу "Про компанію" (Внутрішній анкер)
+                </a>
+            </li>
+            <li id="menu-nav-3" type="disc" title="Внутрішній анкер - Послуги" lang="uk">
+                <a href="index.html#services-anchor" accesskey="s" target="_self" rel="bookmark" type="text/html" tabindex="3">
+                    Перейти до розділу "Завантаження / Послуги" (Внутрішній анкер)
+                </a>
+            </li>
+            <li id="menu-nav-4" type="disc" title="Пряме завантаження" lang="uk">
+                <!-- Посилання з атрибутом download -->
+                <a href="price.pdf" download="Company_Catalog.pdf" accesskey="c" target="_blank" rel="attachment" type="application/pdf" tabindex="4">
+                    Завантажити повний каталог компанії (PDF)
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>

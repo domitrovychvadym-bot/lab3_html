@@ -1,0 +1,76 @@
+/* Основні стилі оформлення */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Навігаційне меню */
+.main-nav {
+    background-color: #2c3e50;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    color: #1abc9c;
+}
+
+/* Біжучий рядок */
+.marquee-banner {
+    font-size: 16px;
+    color: #16a085;
+    padding: 8px 0;
+}
+
+/* Списки та використання CSS-властивостей з методички */
+ul.custom-list {
+    list-style-type: square;
+    list-style-position: inside;
+    list-style-image: none;
+    background: #ffffff;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+}
+
+ol.custom-ol {
+    list-style: lower-roman outside;
+    background: #ffffff;
+    padding: 15px 30px;
+    border-left: 4px solid #2ecc71;
+}
+
+/* CSS-лічильники (counter-reset, counter-increment, content) */
+.numbered-counter-list {
+    counter-reset: section-counter;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.numbered-counter-list > li::before {
+    counter-increment: section-counter;
+    content: "Послуга № " counter(section-counter) ": ";
+    font-weight: bold;
+    color: #e67e22;
+}
+
+/* Стилі для списку визначень */
+.dt-style {
+    font-weight: bold;
+    color: #2980b9;
+    margin-top: 10px;
+}
+
+.dd-style {
+    margin-left: 20px;
+    margin-bottom: 8px;
+    font-style: italic;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>TechLogistic Solutions — Списки та послуги</title>
+    <!-- Тег <link> із атрибутами id, sizes, charset, class із Варіанта 7 -->
+    <link id="main-css-link" sizes="any" charset="UTF-8" class="theme-stylesheet" rel="stylesheet" href="styles.css" type="text/style">
+</head>
+<body>
+
+    <!-- Тег <nav> з атрибутом class -->
+    <nav class="main-nav">
+        <a href="menu.html" title="Перейти до меню проекту">Перейти до Сторінки Меню</a> |
+        <a href="#about-section" title="Швидкий перехід до опису">Про компанію</a> |
+        <a href="#services-anchor" title="Перехід до послуг">Наші послуги</a>
+    </nav>
+
+    <!-- Тег <marquee> з атрибутами title, class, vspace, id, bgcolor -->
+    <marquee title="Спеціальна пропозиція" class="marquee-banner" vspace="10" id="promo-marquee" bgcolor="#e8f8f5">
+        Вітаємо в TechLogistic Solutions! Безкоштовний аудит логістики для нових клієнтів цієї осені.
+    </marquee>
+
+    <main id="main-content">
+        <h1 id="about-section">Компанія TechLogistic Solutions</h1>
+        <p>Ми надаємо сучасні послуги із цифрової трансформації транспортної та складської логістики.</p>
+
+        <!-- 1. МАРКОВАНИЙ СПИСОК (<ul>) -->
+        <h2>Напрямки діяльності (Маркований список)</h2>
+        <!-- Тег <ul> із атрибутами class, value="disc", compact, style, title -->
+        <ul class="custom-list" value="disc" compact style="border: 1px solid #ccc;" title="Основні напрямки компанії">
+            <!-- Тег <li> із атрибутами id, type, title, lang -->
+            <li id="li-item-1" type="square" title="Транспортні послуги" lang="uk">Мультимодальні міжнародні перевезення</li>
+            <li id="li-item-2" type="disc" title="Складська логістика" lang="uk">Автоматизація WMS складів</li>
+            <li id="li-item-3" type="circle" title="Митне оформлення" lang="uk">Консалтинг та митний брокеридж</li>
+        </ul>
+
+        <!-- 2. НУМЕРОВАНИЙ СПИСОК (<ol>) -->
+        <h2>Етапи співпраці (Нумерований список)</h2>
+        <!-- Тег <ol> із атрибутами type="A", class, title, start -->
+        <ol type="A" class="custom-ol" title="Етапи виконання замовлення" start="1">
+            <li id="step-1" type="1" title="Перший крок" lang="uk">Аналіз вимог та аудиту поточних процесів</li>
+            <li id="step-2" type="1" title="Другий крок" lang="uk">Розробка індивідуальної логістичної стратегії</li>
+            <li id="step-3" type="1" title="Третій крок" lang="uk">Впровадження системи автоматизації та запуск</li>
+        </ol>
+
+        <!-- 3. СПИСОК ВИЗНАЧЕНЬ (<dl>, <dt>, <dd>) ТА <dir> -->
+        <h2>Термінологія та підрозділи (Список визначень)</h2>
+        <dl id="dl-terms">
+            <!-- Тег <dt> із атрибутами class, id, style -->
+            <dt class="dt-style" id="dt-wms" style="color: #27ae60;">WMS (Warehouse Management System)</dt>
+            <!-- Тег <dd> із атрибутами dir, class -->
+            <dd dir="ltr" class="dd-style">Система управління складськими запасами у реальному часі.</dd>
+
+            <dt class="dt-style" id="dt-3pl" style="color: #27ae60;">3PL (Third-Party Logistics)</dt>
+            <dd dir="ltr" class="dd-style">Комплексне аутсорсингове надання логістичних послуг.</dd>
+        </dl>
+
+        <!-- Тег <dir> із атрибутом class (за вимогами варіанта) -->
+        <dir class="legacy-dir-list">
+            <li><nobr id="nobr-tag-1">Відділ_доставки_та_експедирування_24/7</nobr></li>
+            <li><nobr id="nobr-tag-2">Відділ_технічної_підтримки_клієнтів</nobr></li>
+        </dir>
+
+        <!-- 4. ВИКОРИСТАННЯ ТЕГІВ <menu> ТА <menuitem> -->
+        <h2>Швидке меню дій</h2>
+        <menu id="actions-menu">
+            <!-- Тег <menuitem> із атрибутом id -->
+            <menuitem id="menu-item-print">Друк сторінки</menuitem>
+            <menuitem id="menu-item-export">Експорт в PDF</menuitem>
+        </menu>
+
+        <!-- 5. ВНУТРІШНЄ ПОСИЛАННЯ (АНКЕР) ТА ТЕГ <a> З АТРИБУТАМИ -->
+        <h2 id="services-anchor">Завантаження та додаткові матеріали</h2>
+        <p>Для завантаження прайс-листа використайте посилання нижче:</p>
+        <p>
+            <!-- Тег <a> із атрибутами download, accesskey, target, rel, type, tabindex -->
+            <a href="price.pdf" download="TechLogistic_Price.pdf" accesskey="d" target="_blank" rel="noopener" type="application/pdf" tabindex="1" title="Завантажити прайс у форматі PDF">
+                Завантажити прайс-лист (PDF)
+            </a>
+        </p>
+    </main>
+</body>
+</html>
